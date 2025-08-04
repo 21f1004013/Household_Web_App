@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .report-section {
+            margin-bottom: 15px;
+        }
+        .report-section p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Professional Report</h1>
+        <div class="report-section">
+            <p><strong>Professional Name:</strong> {{ professional_name }}</p>
+        </div>
+        <div class="report-section">
+            <p><strong>Total Requests:</strong> {{ total_requests }}</p>
+        </div>
+        <div class="report-section">
+            <p><strong>Completed Requests:</strong> {{ completed_requests }}</p>
+        </div>
+        <div class="report-section">
+            <p><strong>Pending Requests:</strong> {{ pending_requests }}</p>
+        </div>
+        <div class="report-section">
+            <p><strong>Year:</strong> {{ current_year }}</p>
+        </div>
+    </div>
+</body>
+</html>
